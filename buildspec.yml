@@ -15,7 +15,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on `date `
 artifacts:
   files:
     - '**/*'
