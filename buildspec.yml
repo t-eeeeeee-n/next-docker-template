@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - cd frontend
+      - echo Installing source NPM dependencies...
+      - npm install
+  pre_build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the TypeScript code...
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'path_to_build_output'
