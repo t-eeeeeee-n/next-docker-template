@@ -15,8 +15,8 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on `date `
 artifacts:
   files:
     - '**/*'
-  base-directory: 'path_to_build_output'
+  base-directory: 'frontend/.next'
